@@ -19,3 +19,4 @@ days.count('Thur')
 print(days.count('Thur'))
 
 
+
