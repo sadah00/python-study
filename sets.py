@@ -16,3 +16,16 @@ days.add("friday")
 print(days)
 days.add("sunday")
 print(days)
+
+# differene
+x={1,2,3,4,5,6,7}
+y={5,6,7,8,9,10}
+# z=x-y
+z=x.difference(y)
+print(z)
+z=x.union(y)
+print(z)
+z=x.symmetric_difference(y)
+print(z)
+z=x.intersection(y)
+print(z)
