@@ -55,17 +55,20 @@ for z in range(1,51):
       even.append(z)
       count=count+1
 print(even)
-ls1 = [ ("Jay", 20), ("Mo", 30), ("Mya", 32) ]
+
 # Display the total quantity of the 3 above.
-tt=0
-for i in ls1:
-   tt=tt+1[1]
-print(tt)
-# ls1 = [ ("Jay", '20'), ("M;o", '30'), ("Mya", '32') ]
-# total=0
-# for r in ls1:
-# #    total=int(total)
-#    total=total+1[1]
-# print(total)
+# ls1 = [ ("Jay", 20), ("Mo", 30), ("Mya", 32) ]
+# tt=0
+# for i in ls1:
+#     tt=tt+i[1]
+# print(tt)
+ls1 = [ ("Jay", '20'), ("M;o", '30'), ("Mya", '32') ]
+total=0
+for r in ls1:
+   r=list(r)
+   r[1]=int(r[1])
+
+   total=total+r[1]
+print(total)
    
 
