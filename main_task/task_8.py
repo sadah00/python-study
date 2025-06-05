@@ -9,7 +9,16 @@
 
 speed=input("Enter speed: ")
 speed=int(speed)
+speed_limit=70
 
-if speed<70:
-    print("OK")
+if speed<speed_limit:
+    result="OK"
+else:
+    demerit_points=round((speed-speed_limit)/5)
+    if demerit_points>12:
+        result='License suspended'
+    else:
+        result=f'You have {demerit_points} points'
+
+print(result)
     
