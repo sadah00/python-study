@@ -12,7 +12,7 @@ for i in range(1,attempts+1):
     word=input("Enter guess: ")
     if word==password:
         print("Access Granted")
-    
+        break
     else:
         remaining=attempts-i
         if remaining>0:

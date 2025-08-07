@@ -25,10 +25,11 @@ second_name=second_name.replace("Do e","Doe")
 full_name=first_name+" "+second_name
 print(full_name)
 
-parts["E","W","C"]
-part1=("E")
-part2=("W")
-part3=("C")
-text=part1+part2+part3
-print(text)
+r= '["E","W","C"]'
+r=r.replace('[','')
+r=r.replace('"','')
+r=r.replace(',','')
+r=r.replace(']','')
+print(r)
+
 

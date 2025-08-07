@@ -54,7 +54,7 @@ def calculate_nhif(gross):
 
 # NHIF calculation and print
 NHIF=calculate_nhif(grossSalary)
-print("NHIF deduction:", NHIF)
+print("NHIF:", NHIF)
 
 # TASK 16: Using Python or PHP or Java or Ruby or JavaScript
 # Continue with the program above, then use  the gross salary to find the NSSF. 
@@ -67,7 +67,7 @@ def calculate_nssf(gross):
     else:
         nssf = 0.06 * 18000 
     return nssf
-
+print("NSSF:", calculate_nssf(grossSalary))
 # Task 17: Using Python or PHP or Java or Ruby or JavaScript
 # Continue with the same program and calculate an individual’s NHDF using:
 #  i.e NHDF = gross_salary *  0.015
@@ -75,12 +75,14 @@ def calculate_nssf(gross):
 def calculate_nhdf(gross):
     nhdf = gross * 0.015
     return nhdf
-
+print("NHDF:", calculate_nhdf(grossSalary))
 # Task 18: Using Python or PHP or Java or Ruby or JavaScript
 # Calculate the taxable income.
 # i.e taxable_income = gross salary - (NSSF + NHDF + NHIF) 
 # Write a normal program but use functions if you feel comfortable.
-
+def calculate_taxable_income(gross, nssf, nhdf, nhif):
+    return gross - (nssf + nhdf + nhif)
+print(calculate_taxable_income(grossSalary, calculate_nssf(grossSalary), calculate_nhdf(grossSalary), NHIF))
 
 # TASK 19: Using Python or PHP or Java or Ruby or JavaScript
 # Continue with the same program and find the person's PAYEE using the taxable income above.
@@ -98,10 +100,3 @@ def calculate_nssf(gross):
         nssf = 0.06 * 18000 
     return nssf
 
-def calculate_nhdf(gross):
-    nhdf = gross * 0.015
-    return nhdf
-
-def calculate_taxable_income(gross, nssf, nhdf, nhif):
-    taxable_income = gross - (nssf + nhdf + nhif)
-    return taxable_income

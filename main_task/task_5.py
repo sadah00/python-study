@@ -13,6 +13,6 @@ note2=int(note2)
 if note>note1 and note>note2:
     print(f'{note} is the largest')
 elif note1>note and note1>note2:
-    print(f'{note1}is the largest')
+    print(f'{note1} is the largest')
 else:
     print(f'{note2} is the largest')   
